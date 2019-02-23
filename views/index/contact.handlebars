@@ -1,0 +1,105 @@
+<header>
+  <nav>
+    <div class="row">
+      <a href="/"><img src="/images/logo.png" class="logo" alt="logo"></a>
+      <ul class="main_nav main_nav_youtube">
+        <li><a href="/aboutme">About Me</a></li>
+        <li><a href="/contactme">Contact</a></li>
+        <li><a href="/photos">Photos</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<section class="section_form">
+  <div class="row">
+    <h2>I am happy to hear from you!!!</h2>
+    <article>
+      <form method="post" action="/postform" class="contactform">
+        <div class="row eachcontactformrow">
+          <div class="col span-1-of-3">
+            <label for="name">Name</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input 
+            type="text" name="name" id="name" placeholder="Your name" 
+            required 
+            />
+          </div>
+        </div>
+        <div class="row eachcontactformrow">
+          <div class="col span-1-of-3">
+            <label for="email">Email</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input 
+            type="email" name="email" id="email" placeholder="Your email" 
+            required 
+            />
+          </div>
+        </div>
+        <div class="row eachcontactformrow">
+          <div class="col span-1-of-3">
+            <label for="find_us">Subject</label>
+          </div>
+          <div class="col span-2-of-3">
+            <select 
+            name="find_us" id="find_us" placeholder="Subejct matter" required>
+              <option value="Job" selected>Job Oppurtunity
+              </option>
+              <option value="Other_oppurtunity">
+                Other Oppurtunities
+              </option>
+              <option value="Other">
+                  Other 
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row eachcontactformrow">
+          <div class="col span-1-of-3">
+            <label for="content">Description</label>
+          </div>
+          <div class="col span-2-of-3">
+            <textarea 
+            type="text" name="content" id="content" placeholder="Enter Description" 
+            required></textarea>
+          </div>
+        </div>
+        <div class="row eachcontactformrow">
+          <div class="col span-1-of-3">
+            <label>&nbsp;</label>
+          </div>
+          <div class="col span-2-of-3">
+            <input 
+            type="submit" id="submit" value="Send it" 
+            required />
+          </div>
+        </div>
+      </form>
+    </article>
+  </div>
+</section>
+  <aside class="contactmeAsideSection">
+    <div class="row">
+      <p>
+        Hey guys, one of the quickest ways of reaching me is by filling out this form and I will surely
+        get back within 24 hours.
+      </p>
+      <hr />
+      <p>
+        Another way to get my attention is via my youtube channel.
+        You can visit the channel <a href="https://www.youtube.com/c/babacademy">here.</a>
+        Watch a video below to get a glimpse <br />
+        Subscribe to my channel <a href="https://www.youtube.com/channel/UCgIcAFC0MTuKg0ElBbSx01g?sub_confirmation=1 ">here.</a>
+      </p>
+      <hr />
+      <p>
+        <iframe 
+        width="250" height="300" 
+        src="https://www.youtube.com/embed/40PU3wRpQSo" 
+        frameborder="0" allow="accelerometer; autoplay; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </p>
+    </div>
+  </aside>
