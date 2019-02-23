@@ -38,23 +38,42 @@
   display: inline;
   }
   .social_links li {
-    margin: 6% 0;
-    display: block;
+    margin: 20px 0px 0px 0px;
+    padding: 0 0 0 53px;
   }
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+    margin-left:0 !important;
+  }
+
 }
 
 /*---------medium phones(smaller ipad):0 to 767 pixels-----*/
 @media only screen and (max-width: 767px)
 {
-  /* .welcome_text_header h1{
-    font-size: 16px !important;
-  } */
-  .welcome_text_header .btn {
-    text-align: center;
-    font-size: 14px;
-    margin: 2% 1%;
-    padding: 1% 1%;
+  h1 {
+    font-size: 24px;
   }
+  .youtubevideoBox{
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 0px 40px;
+  }
+  .youtubevideoBox ion-icon {
+    margin: 0 auto;
+  }
+
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+    margin-left: 7%;
+  }
+
 }
 
 /*---------ipads and other tablets: 0 to 1023 pixels-----*/
@@ -65,14 +84,15 @@
     width:100%;
     height: auto;
   }
-  /* .welcome_text_header h1{
-    font-size: 28px !important;
-    margin-bottom: 3%;
-  } */
   .youtubevideoBox h3{
     font-size: 12px;
     line-height: 150%;
     font-weight: bold;
+  }
+  .welcome_text_header{
+    width: 100%;
+    padding: 0 2%;
+    margin: 0px 0px !important;
   }
 }
 
@@ -82,6 +102,32 @@
   .welcome_text_header{
     width: 100%;
     padding: 0 2%;
+    margin: 0 300px;
+  }
+  .row{
+    padding: 0 2%;
+  }
+  /* .welcome_text_header h1{
+    font-size: 28px !important;
+    margin-bottom: 3%;
+  } */
+  .youtubevideoBox,
+  .youtubevideoBox article{
+    margin-right: 3%;
+    float: right;
+  }
+  .photo_showcase {
+    padding: 0 2%;
+  }
+}
+
+/*---------regular computers(mac osx screen 13 iches): 0 to 1200 pixels-----*/
+@media only screen and (max-width: 1400px)
+{
+  .welcome_text_header{
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 300px;
   }
   .row{
     padding: 0 2%;

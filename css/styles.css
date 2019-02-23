@@ -95,7 +95,7 @@ input[type=submit]:active
   clear: both;
 }
 /* -------------------------------------*/
-/*--------Headinger tag css---------*/
+/*--------Heading(intro) tag css---------*/
 /* -------------------------------------*/
 .header {
   background-image: url('../images/headerImg.JPG');
@@ -145,6 +145,11 @@ input[type=submit]:active
   border-bottom: 2px solid #f1c40f;
 }
 
+
+/* -------------------------------------*/
+/*--------youtube section---------*/
+/* -------------------------------------*/
+
 /*--------------paragrahs css for youtube---------------*/
 
 .youtube_intro{
@@ -160,6 +165,7 @@ ion-icon{
   display: block;
   padding-bottom: 20px;
 }
+
 /*--------------youtube videos css---------------*/
 .youtubevideoBox{
   padding: 1%;
