@@ -113,8 +113,7 @@
   } */
   .youtubevideoBox,
   .youtubevideoBox article{
-    margin-right: 3%;
-    float: right;
+    float: left;
   }
   .photo_showcase {
     padding: 0 2%;
@@ -138,8 +137,7 @@
   } */
   .youtubevideoBox,
   .youtubevideoBox article{
-    margin-right: 3%;
-    float: right;
+    float: left;
   }
   .photo_showcase {
     padding: 0 2%;
