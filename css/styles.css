@@ -1,0 +1,332 @@
+/* -------------------------------------*/
+/* CSS */
+/*----
+orange color - #f1c40f
+center item - margin: 0 auto;
+---*/
+/* -------------------------------------*/
+
+/* -----CSS needed for all elements----*/
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* -----CSS needed for all rows----*/
+.row {
+  max-width: 1143px;
+  margin: 0 auto 0 auto;
+}
+/* -----CSS base for all elements----*/
+html {
+  background-color: #ffffff;
+  color:#000000;
+  font-family: 'Lato','Arial','sans-serif';
+  font-size: 16px;
+  font-weight: 250;
+  text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------------*/
+/* Reuseable css*/
+/* -------------------------------------*/
+
+/* -----CSS needed for all section tags----*/
+section{
+  padding: 80px 0px;
+ 
+}
+/* -----CSS needed for all h1,h2 tags----*/
+h1,h2,h3{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 250;
+}
+h1{
+  margin: 0;
+  font-size: 180%;
+  color: #ffffff;
+  word-spacing: 5px;
+}
+h2{
+  font-size: 160%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h2:after{
+  display: block;
+  height: 2px;
+  background-color: #f1c40f;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+h3{
+  display: block;
+  font-size: 100%;
+  margin-bottom: 15px;
+}
+/*-------buttons-----------*/
+.btn:link, 
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px 10px 30px;
+  margin: 10px 30px 10px 0px;
+  text-decoration: none;
+  color:#ffffff;
+  background-color: #f39c12;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+ {
+  background-color:#f1c40f;
+}
+.clearfix:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+/* -------------------------------------*/
+/*--------Headinger tag css---------*/
+/* -------------------------------------*/
+.header {
+  background-image: url('../images/headerImg.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.welcome_text_header{
+  width: 1140px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+/*--------------logo---------------*/
+.logo{
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+/*--------------nav tag css---------------*/
+.main_nav {
+  float: right;
+  list-style: none;
+  margin-top: 35px;
+}
+.main_nav_youtube li a {
+  color: #000000 !important;
+}
+.main_nav li{
+  display: inline;
+  margin: 5px 10px;
+  padding: 10px 20px;
+}
+.main_nav li a:link,
+.main_nav li a:visited {
+  padding: 0px 0px 5px 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 95%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.main_nav li a:hover,
+.main_nav li a:active {
+  border-bottom: 2px solid #f1c40f;
+}
+
+/*--------------paragrahs css for youtube---------------*/
+
+.youtube_intro{
+  line-height: 150%;
+  width: 75%;
+  margin-left: 15%;
+  padding-bottom: 20px;
+}
+/*--------------------icons---------------------*/
+ion-icon{
+  font-size: 300%;
+  color: #f1c40f;
+  display: block;
+  padding-bottom: 20px;
+}
+/*--------------youtube videos css---------------*/
+.youtubevideoBox{
+  padding: 1%;
+}
+.youtubevideoBox p{
+  margin-top: 10px;
+  font-size: 90%;
+  line-height: 140%;
+}
+.youtubevideoBox p a:link,
+.youtubevideoBox p a:visited
+{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.youtubevideoBox p a:hover,
+.youtubevideoBox p a:active
+{
+  border-bottom: 2px solid #f1c40f;
+}
+/* -------------------------------------*/
+/*--------Photo section---------*/
+/* -------------------------------------*/
+.photo_showcase {
+  list-style: none;
+  width: 100%;
+}
+.photo_showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.photos{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.photos img{
+  width: 90%;
+  height: 90%;
+  color: #000000;
+  transform: scale(1.00);
+  transition: 0.5s, opacity 0.5s;
+  opacity: 1.0;
+}
+.photos img:hover{
+  opacity: 0.5;
+  transform: scale(2.0);
+
+}
+/* -------------------------------------*/
+/*--------About me css---------*/
+/* -------------------------------------*/
+.about_section{
+  float: left;
+  width: 70%;
+  display: block;
+  background-color: yellow;
+}
+.aboutmeimagesection,
+.contactmeAsideSection{
+  float: right;
+  width: 30%;
+  display: block;
+}
+#aboutmeimage
+{
+  width: 100%;
+  height: auto;
+}
+/* -------------------------------------*/
+/*--------Contact form css---------*/
+/* -------------------------------------*/
+.section_form{
+  width: 70%;
+  float: left;
+  padding: 5%;
+  margin: 0 auto;
+}
+.contactmeAsideSection{
+  padding:60px 20px;
+  float: right;
+  width: 30%;
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  border-radius: 3px;
+}
+textarea{
+  height: 100px;
+}
+*:focus{
+  outline: none;
+}
+.eachcontactformrow {
+  margin:20px auto;
+}
+
+/* -------------------------------------*/
+/*--------Footer css---------*/
+/* -------------------------------------*/
+.footersection {
+  margin: 50px 0px 0px 0px;
+  background-color: #333;
+  padding: 20px;
+}
+.footersection p {
+  color: #888;
+  text-align: center;
+  margin:10px 10px;
+  font-size: 70%;
+
+}
+.social_links{
+  list-style: none;
+  float: right;
+}
+.footer_nav {
+  list-style: none;
+  float: left;
+}
+.footer_nav li,
+.social_links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer_nav li:last-child,
+.social_links li:last-child {
+  margin-right: 0;
+}
+
+.footer_nav li a:link,
+.footer_nav li a:visited,
+.social_links li a:link,
+.social_links li a:visited {
+  text-decoration: none;
+  color: #888;
+  border: 0;
+  transition: color 0.5s;
+}
+.social_links li a:link,
+.social_links li a:visited {
+  font-size: 50%;
+}
+.facebook,
+.youtube,
+.linkedin,
+.whizping{
+  transition: color 0.5s;
+}
+.facebook:hover{
+  color: #3b5998;
+}
+.youtube:hover{
+  color: #bb0000;
+}
+.linkedin:hover{
+  color: #007bb6;
+}
+.whizping:hover{
+  color: #00aced;
+}
+.footer_nav li a:hover,
+.footer_nav li a:active {
+  color: #ddd;
+}
