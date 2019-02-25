@@ -169,6 +169,7 @@ input[type=submit]:active
 }
 .mobile_navy ion-icon{
   font-size: 200%;
+  margin-right: 100px;
   color: black;
 }
 
