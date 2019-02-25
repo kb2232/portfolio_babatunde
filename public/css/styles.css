@@ -33,8 +33,7 @@ html {
 
 /* -----CSS needed for all section tags----*/
 section{
-  padding: 80px 0px;
- 
+  padding: 100px 0px;
 }
 /* -----CSS needed for all h1,h2 tags----*/
 h1,h2,h3{
@@ -154,13 +153,24 @@ input[type=submit]:active
   width: 100%;
   background-color: rgb(255, 255, 255, 0.98);
   box-shadow: 0 2px 2px gainsboro;
+  z-index: 9999;
 }
 .sticyknav .main_nav li a:link,
 .sticyknav .main_nav li a:visited {
   padding: 0px 0px 5px 0px;
   color: black;
 }
-
+/*--------------mobile nav tag css---------------*/
+.mobile_navy {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+.mobile_navy ion-icon{
+  font-size: 200%;
+  color: black;
+}
 
 /* -------------------------------------*/
 /*--------youtube section---------*/
@@ -262,12 +272,13 @@ ion-icon{
   width: 60%;
   float: left;
   padding: 5%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .contactmeAsideSection{
   padding:60px 20px;
   float: right;
   width: 40%;
+  margin: 45px auto;
 }
 .contactmeAsideSection p{
   border: 1px solid black;

@@ -52,11 +52,35 @@
     padding: 4% 14% !important;
     margin: 2% auto !important;
   }
+  .section_form{
+    width: 100%;
+    padding: 5%;
+    margin-top: 20% !important;
+  }
 
 }
-/*---------medium phones(smaller ipad):0 to 767 pixels-----*/
+/*---------medium phones(smaller ipad): 481 to 767 pixels-----*/
 @media only screen and (max-width: 767px)
 {
+  .mobile_navy{
+    display: inline !important;
+  }
+  .main_nav{
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    display: none;
+  }
+  .main_nav li{
+    display: block;
+  }
+  .main_nav li a:link,
+  .main_nav li a:visited 
+  {
+    display: block;
+    border: 0;
+
+  }
   h1 {
     font-size: 24px;
   }
@@ -80,7 +104,7 @@
   .section_form{
     width: 100%;
     padding: 5%;
-    margin: 0 auto;
+    margin-top: 20%;
   }
   .contactmeAsideSection{
     padding:60px 20px;
@@ -105,7 +129,7 @@
 
 }
 
-/*---------ipads and other tablets: 0 to 1023 pixels-----*/
+/*---------ipads and other tablets: 768 to 1023 pixels-----*/
 @media only screen and (max-width: 1023px)
 {
   body{ font-size: 18px;}
@@ -126,7 +150,7 @@
   .section_form{
     width: 100%;
     padding: 5%;
-    margin: 0 auto;
+    margin-top: 10%;
   }
   .contactmeAsideSection{
     padding:60px 20px;
@@ -148,7 +172,7 @@
   }
 }
 
-/*---------small computers(big tablets): 0 to 1200 pixels-----*/
+/*---------small computers(big tablets): 1024 to 1200 pixels-----*/
 @media only screen and (max-width: 1200px)
 {
   .welcome_text_header{
@@ -166,7 +190,7 @@
   }
 }
 
-/*---------regular computers(mac osx screen 13 iches): 0 to 1200 pixels-----*/
+/*---------regular computers(mac osx screen 13 iches): 1201 to 1400 pixels-----*/
 @media only screen and (max-width: 1400px)
 {
   .welcome_text_header{
@@ -177,11 +201,4 @@
   .row{
     padding: 0 2%;
   }
-
-  /* .photo_showcase li {
-    width: 300px;
-    height: 200px;
-    float: left;
-    margin-left: 80px;
-  } */
 }
