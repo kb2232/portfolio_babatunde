@@ -23,7 +23,7 @@ html {
   color:#000000;
   font-family: 'Lato','Arial','sans-serif';
   font-size: 16px;
-  font-weight: 250;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
 }
 
@@ -39,7 +39,7 @@ section{
 h1,h2,h3{
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 250;
+  font-weight: 300;
 }
 h1{
   margin: 0;
