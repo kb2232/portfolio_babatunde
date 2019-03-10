@@ -248,23 +248,38 @@ ion-icon{
 /* -------------------------------------*/
 /*--------About me css---------*/
 /* -------------------------------------*/
-.about_section{
-  display: block;
+.aboutmesection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 10%;
 }
-.about_section .aboutmebuttons{
-  margin: 2% 0;
+.aboutmesection__Section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.aboutmesection__buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 2% 20%;
 }
 
-#aboutMe_text {
+.aboutmesection__Section__text{
   padding: 2% 20%;
-  text-align: center;
   line-height: 200%;
+  text-align: center;
 }
-.contactmeAsideSection{
-  float: right;
-  width: 30%;
-  display: block;
+.aboutmesection__footersection {
+  align-self: stretch;
+  margin-top: 8%;
+  background-color: #333;
+  padding: 20px;
 }
 /* -------------------------------------*/
 /*--------Contact form css---------*/
