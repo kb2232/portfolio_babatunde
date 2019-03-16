@@ -16,9 +16,13 @@ function init()
   let stage = new createjs.Stage("stage-canvas")
   let circle = new createjs.Shape();
   circle.graphics.beginFill("red");
-  circle.graphics.drawCircle(0,0,30);
-  circle.x = 50;
-  circle.y = 80;
+  circle.graphics.drawCircle(0,0,25);
+  circle.graphics.endFill();
+  circle.x = 30;
+  circle.y = 70;
   stage.addChild(circle);
-  stage.update();
+  createjs.Tween.get(circle, { loop: true })
+    .to({ x: 300 }, 2000, createjs.Ease.getPowInOut(4));
+  createjs.Ticker.setFPS(60);
+  createjs.Ticker.addEventListener("tick", stage);
 }

@@ -438,13 +438,12 @@ textarea{
 canvas {
   border: solid 2px #000;
   background-color: #333;
-  flex: 0 1 20%;
-  height: 100%;
+  flex: 0 1 auto;
 }
 .canvasItem{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 15% 0 0 20%;
+  padding: 35% 0 0 5%;
 }
