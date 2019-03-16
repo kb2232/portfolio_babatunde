@@ -438,7 +438,7 @@ textarea{
 canvas {
   border: solid 2px #000;
   background-color: #333;
-  flex: 0 1 30%;
+  flex: 0 1 20%;
   height: 100%;
 }
 .canvasItem{

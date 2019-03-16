@@ -15,8 +15,9 @@ function init()
 {
   let stage = new createjs.Stage("stage-canvas")
   let circle = new createjs.Shape();
-  circle.graphics.beginFill("SkyBlue").drawCircle(0,0,50);
-  circle.x = 80;
+  circle.graphics.beginFill("red");
+  circle.graphics.drawCircle(0,0,30);
+  circle.x = 50;
   circle.y = 80;
   stage.addChild(circle);
   stage.update();
