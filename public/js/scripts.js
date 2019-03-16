@@ -10,3 +10,14 @@ $(document).ready(function(){
   })
 
 });
+
+function init() 
+{
+  let stage = new createjs.Stage("stage-canvas")
+  let circle = new createjs.Shape();
+  circle.graphics.beginFill("SkyBlue").drawCircle(0,0,50);
+  circle.x = 80;
+  circle.y = 80;
+  stage.addChild(circle);
+  stage.update();
+}
