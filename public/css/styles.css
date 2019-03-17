@@ -107,7 +107,7 @@ input[type=submit]:active
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 100px 0 0 0;
+  padding: 80px 0 0 0;
 }
 /*--------------logo---------------*/
 .logo{
@@ -251,10 +251,10 @@ ion-icon{
 /* -------------------------------------*/
 .aboutmesection{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 .aboutmesection__Section{
   display: flex;
@@ -272,7 +272,7 @@ ion-icon{
 }
 
 .aboutmesection__Section__text{
-  padding: 2% 20%;
+  padding: 2% 10%;
   line-height: 200%;
   text-align: center;
 }
@@ -281,6 +281,9 @@ ion-icon{
   margin-top: 8%;
   background-color: #333;
   padding: 20px;
+}
+.aboutmesection__Aside__Canvas{
+  padding: 5% 5% 0 0;
 }
 /* -------------------------------------*/
 /*--------Contact form css---------*/
@@ -438,7 +441,7 @@ textarea{
 /* -------------------------------------*/
 canvas {
   border: solid 2px #000;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   background-color: #333;
   opacity: 0.5;
   flex: 0 1 auto;

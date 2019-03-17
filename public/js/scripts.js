@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 function init() 
 {
-  let stage = new createjs.Stage("stage-canvas")
+  let stage = new createjs.Stage("stage-canvas");
   let circle = new createjs.Shape();
   circle.graphics.beginRadialGradientFill(
     ["#F00","#FCD440"],
@@ -47,11 +47,24 @@ function init()
     .to( { rotation: 0 }, 5000, createjs.Ease.quintIn)
     .wait(2000)
   createjs.Tween.get(circle, { loop: true })
-    .to( { x: 480 }, 2000, createjs.Ease.bounceOut)
-    .to( { y: 50 }, 1000, createjs.Ease.quintIn)
+    .to( { x: stage.canvas.width - 30 }, 2000, createjs.Ease.bounceOut)
+    .to( { y: stage.canvas.height/2 }, 1000, createjs.Ease.quintIn)
     .wait(2000)
-    .to( { x: 25 }, 2000, createjs.Ease.elasticIn)
-    .to( { y: 50 }, 1000, createjs.Ease.getPowInOut(2))
+    .to( { x: 15 }, 2000, createjs.Ease.elasticIn)
+    .to( { y: stage.canvas.height }, 1000, createjs.Ease.getPowInOut(4))
   createjs.Ticker.setFPS(60);
   createjs.Ticker.addEventListener("tick", stage);
+  
+  let stage2 = new createjs.Stage("aboutmeCanvas");
+  let rectShape = new createjs.Shape();
+  rectShape.graphics.beginStroke("yellow");
+  rectShape.graphics.setStrokeStyle(25);
+  rectShape.graphics.drawRect(
+    0, 0, //x, y
+    150, 150 // width, height
+  );
+  rectShape.graphics.endStroke();
+  rectShape.x = stage2.canvas.width*0.5 - 75;
+  rectShape.y = stage2.canvas.height*0.5 - 75;
+  stage2.addChild(rectShape);
 }
