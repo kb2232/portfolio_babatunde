@@ -161,6 +161,17 @@
     border: solid 2px #000;
     width: 300px;
   }
+  .welcometextheader{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding: 50px 0 0 0 !important;
+  }
+  .canvas{
+    width: 280px;
+    height: 300px;
+  }
 
 }
 
@@ -201,11 +212,11 @@
     float: left;
   }
   .welcometextheader{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 0 0 0;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding: 50px 0 0 0 !important;
   }
   .canvas{
     width: 400px;
@@ -239,12 +250,12 @@
     height: 200px;
     float: left;
   }
+  
   .welcometextheader{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40% 0 0 0;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
   .canvas{
     width: 800px;
