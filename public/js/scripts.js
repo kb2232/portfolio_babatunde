@@ -15,17 +15,43 @@ function init()
 {
   let stage = new createjs.Stage("stage-canvas")
   let circle = new createjs.Shape();
-  circle.graphics.beginFill("#f1c40f");
+  circle.graphics.beginRadialGradientFill(
+    ["#F00","#FCD440"],
+    [0,1],
+    0,
+    0,
+    5,
+    0,
+    0,
+    25
+  );
   circle.graphics.drawCircle(0,0,15);
   circle.graphics.endFill();
   circle.x = 30;
-  circle.y = 100;
+  circle.y = stage.canvas.height - 50;
   stage.addChild(circle);
+  const titleText = new createjs.Text(
+    "WELCOME TO MY PORTFOLIO",
+    "bold 26px Lato",
+    "#f1c40f"
+    );
+    titleText.regX = titleText.getMeasuredWidth() / 2;
+    titleText.regY = titleText.getMeasuredHeight() / 2;
+    titleText.x = (stage.canvas.width)/2;
+    titleText.y = (stage.canvas.height)/2;
+    titleText.shadow = new createjs.Shadow("#000",5,5,10);
+  stage.addChild(titleText);
+  createjs.Tween.get(titleText, {loop:true})
+    .to( { rotation: 360 }, 5000, createjs.Ease.bounceOut)
+    .wait(2000)
+    .to( { rotation: 0 }, 5000, createjs.Ease.quintIn)
+    .wait(2000)
   createjs.Tween.get(circle, { loop: true })
-    .to( { x: 250 }, 2000, createjs.Ease.getPowInOut(4))
+    .to( { x: 480 }, 2000, createjs.Ease.bounceOut)
+    .to( { y: 50 }, 1000, createjs.Ease.quintIn)
+    .wait(2000)
+    .to( { x: 25 }, 2000, createjs.Ease.elasticIn)
     .to( { y: 50 }, 1000, createjs.Ease.getPowInOut(2))
-    .to( { x: -5 }, 2000, createjs.Ease.getPowInOut(4))
-    .to( { y: 150 }, 1000, createjs.Ease.getPowInOut(2))
   createjs.Ticker.setFPS(60);
   createjs.Ticker.addEventListener("tick", stage);
 }

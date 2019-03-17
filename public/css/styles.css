@@ -102,11 +102,12 @@ input[type=submit]:active
   background-position: center;
   height: 100vh;
 }
-.welcome_text_header{
-  width: 1140px;
-  position: absolute;
-  top: 50%;
-  left: 5%;
+.welcometextheader{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0 0 0;
 }
 /*--------------logo---------------*/
 .logo{
@@ -437,13 +438,8 @@ textarea{
 /* -------------------------------------*/
 canvas {
   border: solid 2px #000;
+  margin-bottom: 5%;
   background-color: #333;
+  opacity: 0.5;
   flex: 0 1 auto;
-}
-.canvasItem{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 35% 0 0 5%;
 }
