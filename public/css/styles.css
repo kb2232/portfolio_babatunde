@@ -253,7 +253,7 @@ ion-icon{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   padding-top: 5%;
 }
 .aboutmesection__Section{
@@ -268,7 +268,7 @@ ion-icon{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2% 20%;
+  padding: 2% 10%;
 }
 
 .aboutmesection__Section__text{
@@ -283,7 +283,10 @@ ion-icon{
   padding: 20px;
 }
 .aboutmesection__Aside__Canvas{
-  padding: 5% 5% 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4% 4%;
 }
 /* -------------------------------------*/
 /*--------Contact form css---------*/
@@ -439,10 +442,14 @@ textarea{
 /* -------------------------------------*/
 /*--------canvas css---------*/
 /* -------------------------------------*/
-canvas {
+.canvas {
   border: solid 2px #000;
   margin-bottom: 3%;
   background-color: #333;
   opacity: 0.5;
+  flex: 0 1 auto;
+}
+.aboutmeSection__Canvas{
+  border: solid 2px #000;
   flex: 0 1 auto;
 }

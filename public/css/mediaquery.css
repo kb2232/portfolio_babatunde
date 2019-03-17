@@ -61,11 +61,24 @@
     align-items: center !important;
     padding: 50px 0 0 0 !important;
   }
-  canvas{
+  .canvas{
     width: 300px !important;
     height: 300px !important;
   }
-
+  .aboutmesection{
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 10% !important;
+  }
+  .aboutmesection__Aside__Canvas{
+    padding: 30% 0 0 0 !important;
+  }
+  .aboutmeSection__Canvas{
+    border: solid 2px #000 !important;
+    width: 300px !important;
+  }
 }
 /*---------medium phones(smaller ipad): 481 to 767 pixels-----*/
 @media only screen and (max-width: 767px)
@@ -134,6 +147,20 @@
     padding: 4% 25%;
     margin: 2% auto;
   }
+  .aboutmesection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .aboutmesection__Aside__Canvas{
+    padding: 30% 0 0 0;
+  }
+  .aboutmeSection__Canvas{
+    border: solid 2px #000;
+    width: 300px;
+  }
 
 }
 
@@ -180,9 +207,19 @@
     align-items: center;
     padding: 50px 0 0 0;
   }
-  canvas{
+  .canvas{
     width: 400px;
     height: 400px;
+  }
+  .aboutmesection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .aboutmesection__Aside__Canvas{
+    padding: 30% 0 0 0;
   }
 }
 
@@ -202,12 +239,30 @@
     height: 200px;
     float: left;
   }
-  .canvasItem{
+  .welcometextheader{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10% 0 0 5%;
+    padding: 40% 0 0 0;
+  }
+  .canvas{
+    width: 800px;
+  }
+  .aboutmesection{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .aboutmesection__Aside__Canvas{
+    padding: 30% 0 0 0;
+  }
+  .aboutmeSection__Canvas{
+    border: solid 2px #000;
+    width: 600px;
+    flex: 0 1 100%;
   }
 }
 
@@ -221,12 +276,5 @@
   }
   .row{
     padding: 0 2%;
-  }
-  .canvasItem{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 0 0 5%;
   }
 }
