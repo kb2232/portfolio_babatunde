@@ -17,6 +17,9 @@ function init()
   let stage2 = new createjs.Stage("stage2-canvas");
   let circle = new createjs.Shape();
   let rectShape = new createjs.Shape();
+  let rectShape2 = new createjs.Shape();
+  let rectShape3 = new createjs.Shape();
+  let rectShape4 = new createjs.Shape();
 
   circle.graphics.beginRadialGradientFill(
     ["#F00","#FCD440"],
@@ -61,16 +64,85 @@ function init()
   /*
   ------------------CANVAS 2-------------------
   */
- rectShape.graphics.beginStroke("red");
- rectShape.graphics.setStrokeStyle(25);
- rectShape.graphics.drawRect(
-   0, 0, //x, y
-   150, 150 // width, height
- );
- rectShape.graphics.endStroke();
- rectShape.x = stage2.canvas.width*0.5 - 75;
- rectShape.y = stage2.canvas.height*0.5 - 75;
- stage2.addChild(rectShape);
- stage2.update();
+  rectShape.graphics.beginStroke("#F00");
+  rectShape.graphics.setStrokeStyle(15); //pixels for width
+  rectShape.graphics.drawRect(
+    0, 0, //x, y
+    210, 150 // width, height
+  );
+  rectShape.graphics.endStroke();
+  rectShape.graphics.beginStroke("#00F");
+  rectShape.graphics.setStrokeStyle(5); //pixels for width
+  rectShape.graphics.drawRect(
+    0, 0, //x, y
+    210, 150 // width, height
+  );
+  rectShape.graphics.endStroke();
+  rectShape.x = 8;
+  rectShape.y = 8;
+  stage2.addChild(rectShape);
+  stage2.update();
+
+
+  rectShape2.graphics.beginStroke("#F00");
+  rectShape2.graphics.setStrokeStyle(15); //pixels for width
+  rectShape2.graphics.drawRect(
+    0, 0, //x, y
+    210, 150 // width, height
+  );
+  rectShape2.graphics.endStroke();
+  rectShape2.graphics.beginStroke("#0FF");
+  rectShape2.graphics.setStrokeStyle(5); //pixels for width
+  rectShape2.graphics.drawRect(
+    0, 0, //x, y
+    210, 150 // width, height
+  );
+  rectShape2.graphics.endStroke();
+  rectShape2.x = 230;
+  rectShape2.y = 8;
+  stage2.addChild(rectShape2);
+  stage2.update();
+  
+
+  rectShape4.graphics.beginStroke("#F00");
+  rectShape4.graphics.setStrokeStyle(15); //pixels for width
+  rectShape4.graphics.drawRect(
+    0, 0, //x, y
+    210, 120 // width, height
+  );
+  rectShape4.graphics.endStroke();
+  rectShape4.graphics.beginStroke("#00F");
+  rectShape4.graphics.setStrokeStyle(5); //pixels for width
+  rectShape4.graphics.drawRect(
+    0, 0, //x, y
+    210, 120 // width, height
+  );
+  rectShape4.graphics.endStroke();
+  rectShape4.x = 230;
+  rectShape4.y = 170;
+  stage2.addChild(rectShape4);
+  stage2.update();
+
+
+  rectShape3.graphics.beginStroke("#F00");
+  rectShape3.graphics.setStrokeStyle(15); //pixels for width
+  rectShape3.graphics.drawRect(
+    0, 0, //x, y
+    210, 120 // width, height
+  );
+  rectShape3.graphics.endStroke();
+  rectShape3.graphics.beginStroke("#0FF");
+  rectShape3.graphics.setStrokeStyle(5); //pixels for width
+  rectShape3.graphics.drawRect(
+    0, 0, //x, y
+    210, 120 // width, height
+  );
+  rectShape3.graphics.endStroke();
+  rectShape3.x = 8;
+  rectShape3.y = 170;
+  stage2.addChild(rectShape3);
+  stage2.update();
+
+
 
 }

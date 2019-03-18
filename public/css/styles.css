@@ -254,7 +254,7 @@ ion-icon{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 1%;
 }
 .aboutmesection__Section{
   display: flex;
