@@ -14,12 +14,11 @@ $(document).ready(function(){
 function init() 
 {
   let stage = new createjs.Stage("stage-canvas");
-  let stage2 = new createjs.Stage("stage2-canvas");
   let circle = new createjs.Shape();
+
+  let stage2 = new createjs.Stage("stage2-canvas");
   let rectShape = new createjs.Shape();
-  let rectShape2 = new createjs.Shape();
-  let rectShape3 = new createjs.Shape();
-  let rectShape4 = new createjs.Shape();
+  let circleFillStrokeShape = new createjs.Shape();
 
   circle.graphics.beginRadialGradientFill(
     ["#F00","#FCD440"],
@@ -64,85 +63,39 @@ function init()
   /*
   ------------------CANVAS 2-------------------
   */
-  rectShape.graphics.beginStroke("#F00");
-  rectShape.graphics.setStrokeStyle(15); //pixels for width
-  rectShape.graphics.drawRect(
-    0, 0, //x, y
-    210, 150 // width, height
-  );
-  rectShape.graphics.endStroke();
-  rectShape.graphics.beginStroke("#00F");
-  rectShape.graphics.setStrokeStyle(5); //pixels for width
-  rectShape.graphics.drawRect(
-    0, 0, //x, y
-    210, 150 // width, height
-  );
-  rectShape.graphics.endStroke();
-  rectShape.x = 8;
-  rectShape.y = 8;
+  rectShape.graphics.beginFill("#2c3e50");
+  rectShape.graphics.drawRect(-100,-100,200,200);
+  rectShape.graphics.endFill();
+  rectShape.x = stage2.canvas.width*0.5;
+  rectShape.y = stage2.canvas.height*0.5;
   stage2.addChild(rectShape);
   stage2.update();
 
-
-  rectShape2.graphics.beginStroke("#F00");
-  rectShape2.graphics.setStrokeStyle(15); //pixels for width
-  rectShape2.graphics.drawRect(
-    0, 0, //x, y
-    210, 150 // width, height
-  );
-  rectShape2.graphics.endStroke();
-  rectShape2.graphics.beginStroke("#0FF");
-  rectShape2.graphics.setStrokeStyle(5); //pixels for width
-  rectShape2.graphics.drawRect(
-    0, 0, //x, y
-    210, 150 // width, height
-  );
-  rectShape2.graphics.endStroke();
-  rectShape2.x = 230;
-  rectShape2.y = 8;
-  stage2.addChild(rectShape2);
-  stage2.update();
-  
-
-  rectShape4.graphics.beginStroke("#F00");
-  rectShape4.graphics.setStrokeStyle(15); //pixels for width
-  rectShape4.graphics.drawRect(
-    0, 0, //x, y
-    210, 120 // width, height
-  );
-  rectShape4.graphics.endStroke();
-  rectShape4.graphics.beginStroke("#00F");
-  rectShape4.graphics.setStrokeStyle(5); //pixels for width
-  rectShape4.graphics.drawRect(
-    0, 0, //x, y
-    210, 120 // width, height
-  );
-  rectShape4.graphics.endStroke();
-  rectShape4.x = 230;
-  rectShape4.y = 170;
-  stage2.addChild(rectShape4);
+  circleFillStrokeShape.graphics.beginStroke("#ecf0f1");
+  circleFillStrokeShape.graphics.setStrokeStyle(25);
+  circleFillStrokeShape.graphics.beginFill("#c0392b");
+  circleFillStrokeShape.graphics.drawCircle(0,0,100);
+  circleFillStrokeShape.alpha = 0.5;
+  circleFillStrokeShape.graphics.endFill();
+  circleFillStrokeShape.graphics.endStroke();
+  circleFillStrokeShape.x = rectShape.x;
+  circleFillStrokeShape.y = rectShape.y;
+  stage2.addChild(circleFillStrokeShape);
   stage2.update();
 
-
-  rectShape3.graphics.beginStroke("#F00");
-  rectShape3.graphics.setStrokeStyle(15); //pixels for width
-  rectShape3.graphics.drawRect(
-    0, 0, //x, y
-    210, 120 // width, height
-  );
-  rectShape3.graphics.endStroke();
-  rectShape3.graphics.beginStroke("#0FF");
-  rectShape3.graphics.setStrokeStyle(5); //pixels for width
-  rectShape3.graphics.drawRect(
-    0, 0, //x, y
-    210, 120 // width, height
-  );
-  rectShape3.graphics.endStroke();
-  rectShape3.x = 8;
-  rectShape3.y = 170;
-  stage2.addChild(rectShape3);
+  let messageText2 = new createjs.Text("Click anywhere within the canvas for position coordinates","16px Arial","#000");
+  messageText2.y= 10;
+  stage2.addChild(messageText2);
   stage2.update();
 
+  let messageText = new createjs.Text("...waiting for click...","18px Arial","#000");
+  messageText.y= stage2.canvas.height - messageText.getMeasuredHeight()-5;
+  stage2.addChild(messageText);
+  stage2.update();
 
+  stage2.addEventListener("stagemousedown",(e)=>{
+    messageText.text = `x:${e.stageX} | y:${e.stageY} `;
+    stage2.update();
+  })
 
 }
